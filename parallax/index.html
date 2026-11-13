@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parallax</title>
+  <!-- QR CODE TARGET. To change where the printed QR code goes, edit DEST below (one place) and push. -->
+  <script>
+    var DEST = "";
+    if (DEST) { window.location.replace(DEST); }
+  </script>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 36rem; margin: 15vh auto; padding: 0 1.5rem; line-height: 1.5; color: #222; }
+    @media (prefers-color-scheme: dark) { body { background: #151515; color: #eee; } a { color: #9cf; } }
+  </style>
+</head>
+<body>
+  <h1>Parallax</h1>
+  <p>Final Year Project, FAST-NUCES Islamabad.</p>
+  <p id="msg">The live demo is being deployed. Please check back soon.</p>
+  <script>
+    if (DEST) { document.getElementById("msg").innerHTML = 'Redirecting. <a href="' + DEST + '">Click here if nothing happens.</a>'; }
+  </script>
+</body>
+</html>
